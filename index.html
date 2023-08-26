@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="main.css" rel="stylesheet">
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <div class="main-grid">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Dec 7, 2017</h5>
+        <div class="fakeimg">
+          <img src="blog1.jpg" alt="Blog Image">
+          <div class="overlay">
+            <div class="text">View</div>
+          </div>
+        </div>
+        <p>Some text..</p>
+      </div>
+      <div class="card">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Sep 2, 2017</h5>
+        <div class="fakeimg">
+          <div class="fakeimg">
+            <img src="blog2.webp" alt="Blog Image">
+            <div class="overlay">
+              <div class="text">View</div>
+            </div>
+          </div>
+        </div>
+        <p>Some text..</p>
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>Heading</h2>
+        <div class="fakeimg">
+          <img src="it-specialist-checking-code-computer-dark-office-night.jpg" alt="Blog Image">
+          <div class="overlay">
+            <div class="text">View</div>
+          </div>
+        </div>
+        <p>Some text about the heading...</p>
+      </div>
+      <div class="card">
+        <h3>Popular Post</h3>
+        <div class="fakeimg">
+          <div class="fakeimg">
+            <img src="people-working-laptop-meeting.jpg" alt="Blog Image">
+            <div class="overlay">
+              <div class="text">View</div>
+            </div>
+          </div>          
+        </div>
+        <p>
+          Some text about the image
+        </p>
+        <br>
+        
+      </div>      
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Created by Wiseman Dlungwana</p>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+</html>
